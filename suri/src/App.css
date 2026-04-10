@@ -745,6 +745,10 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
+  .hero {
+    padding-top: 5rem;
+  }
+
   .hero-inner {
     flex-direction: column-reverse;
     text-align: center;
