@@ -3,8 +3,8 @@ name: Deploy React Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main       # Trigger on push or merge to main
-  workflow_dispatch:  # Optional: allows manual trigger from GitHub UI
+      - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: suri
+        working-directory: suri  # React app folder
 
     steps:
       - name: Checkout repository
@@ -29,10 +29,12 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Configure Git for gh-pages
+      - name: Configure Git
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-  
+
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # Pass GitHub Actions token
+        run: npx gh-pages -d build -b gh-pages --cname venkatasaikiransuri.online -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
