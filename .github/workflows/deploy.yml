@@ -1,0 +1,29 @@
+name: Deploy React Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main       # Trigger on push or merge to main
+  workflow_dispatch:  # Optional: allows manual trigger from GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
