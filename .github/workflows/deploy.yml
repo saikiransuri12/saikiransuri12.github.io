@@ -36,5 +36,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # Pass GitHub Actions token
+          GH_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}   # Pass GitHub Actions token
         run: npx gh-pages -d build -b gh-pages --cname venkatasaikiransuri.online -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
