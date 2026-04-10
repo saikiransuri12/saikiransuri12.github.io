@@ -46,7 +46,7 @@ function Contact() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/"
+            href="https://www.linkedin.com/in/venkata-sai-kiran-suri-837a9a193/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
