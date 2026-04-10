@@ -32,7 +32,7 @@ function Contact() {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:your.email@example.com" className="contact-link">
+          <a href="mailto:saikiran.suri12@gmail.com" className="contact-link">
             <HiMail className="contact-link-icon" />
             Email Me
           </a>
