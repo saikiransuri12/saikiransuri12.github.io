@@ -5,6 +5,14 @@ import { SiGithub } from 'react-icons/si';
 
 const projects = [
   {
+    title: 'Sudoku Game',
+    description:
+      'A full-featured Sudoku game with 5 difficulty levels, FastPencil auto-notes, manual notes, hints, undo, timer, and unique-solution puzzle generation built from scratch.',
+    tech: ['React', 'JavaScript', 'CSS3', 'Backtracking'],
+    github: 'https://github.com/saikiransuri12/saikiransuri12.github.io/tree/main/sudoku-game',
+    live: 'https://venkatasaikiransuri.online/sudoku',
+  },
+  {
     title: 'Portfolio Website',
     description:
       'A modern, animated personal portfolio built with React and Framer Motion, showcasing skills, projects, and experience with a sleek dark theme.',

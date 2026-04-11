@@ -10,10 +10,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: suri  # React app folder
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -23,11 +19,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install and build portfolio
+        working-directory: suri
+        run: |
+          npm install
+          npm run build
 
-      - name: Build React app
-        run: npm run build
+      - name: Install and build Sudoku game
+        working-directory: sudoku-game
+        run: |
+          npm install
+          npm run build
+
+      - name: Copy Sudoku build into portfolio
+        run: cp -r sudoku-game/build suri/build/sudoku
 
       - name: Configure Git
         run: |
@@ -35,6 +40,7 @@ jobs:
           git config --global user.name "GitHub Action"
 
       - name: Deploy to GitHub Pages
+        working-directory: suri
         env:
-          GH_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}   # Pass GitHub Actions token
+          GH_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}
         run: npx gh-pages -d build -b gh-pages --cname venkatasaikiransuri.online -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
