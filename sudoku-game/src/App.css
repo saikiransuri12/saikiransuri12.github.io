@@ -376,7 +376,7 @@ body.start-page {
 }
 
 .cell-value {
-  font-size: clamp(1.65rem, 6.5vw, 2.3rem);
+  font-size: clamp(1.9rem, 7.5vw, 2.6rem);
   font-weight: 700;
   line-height: 1;
 }
@@ -407,7 +407,7 @@ body.start-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(0.45rem, 1.6vw, 0.65rem);
+  font-size: clamp(0.6rem, 2.2vw, 0.85rem);
   font-weight: 500;
   color: var(--text-note);
   line-height: 1;
@@ -530,7 +530,7 @@ body.start-page {
 }
 
 .num-value {
-  font-size: clamp(1.65rem, 6vw, 2.2rem);
+  font-size: clamp(1.9rem, 7vw, 2.5rem);
   font-weight: 700;
   line-height: 1;
 }
