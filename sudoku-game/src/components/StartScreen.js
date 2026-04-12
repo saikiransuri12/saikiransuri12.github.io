@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DIFF_LABELS = {
   easy: { label: 'Easy', desc: 'Perfect for beginners', color: '#4ade80' },
@@ -10,6 +10,11 @@ const DIFF_LABELS = {
 
 function StartScreen({ difficulties, onStart }) {
   const [selected, setSelected] = useState('medium');
+
+  useEffect(() => {
+    document.body.classList.add('start-page');
+    return () => document.body.classList.remove('start-page');
+  }, []);
 
   return (
     <div className="start-screen">

@@ -51,11 +51,6 @@ function App() {
       <Projects />
       <Contact />
 
-      <footer className="footer">
-        <p>
-          Built with <span className="heart">&#9829;</span> by Venkata Sai Kiran Suri
-        </p>
-      </footer>
     </div>
   );
 }
