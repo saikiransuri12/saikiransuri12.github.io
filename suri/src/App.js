@@ -3,6 +3,7 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Particles from './components/Particles';
@@ -37,6 +38,7 @@ function App() {
           <li><a href="#home" onClick={(e) => handleNavClick(e, 'home')}>Home</a></li>
           <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a></li>
           <li><a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a></li>
+          <li><a href="#experience" onClick={(e) => handleNavClick(e, 'experience')}>Experience</a></li>
           <li><a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a></li>
           <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a></li>
         </ul>
@@ -45,6 +47,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Experience />
       <Projects />
       <Contact />
 

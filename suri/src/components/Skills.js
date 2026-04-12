@@ -1,56 +1,59 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  SiPython, SiJavascript, SiReact,
+  SiPython, SiJavascript, SiReact, SiFastapi, SiGraphql,
   SiPostgresql, SiGit, SiDocker, SiLinux,
-  SiPandas, SiNumpy, SiGnubash
+  SiGnubash, SiKubernetes
 } from 'react-icons/si';
-import { FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaJava, FaDatabase, FaAws } from 'react-icons/fa';
 import {
-  HiCode, HiDatabase, HiChartBar, HiCog, HiTerminal
+  HiCode, HiDatabase, HiCloud, HiCog, HiTerminal, HiBeaker
 } from 'react-icons/hi';
 
 const skillCategories = [
   {
-    title: 'Programming Languages',
+    title: 'Backend Development',
     icon: <HiCode style={{ color: '#6366f1' }} />,
     skills: [
       { name: 'Python', icon: <SiPython /> },
-      { name: 'Java', icon: <FaJava /> },
-      { name: 'JavaScript', icon: <SiJavascript /> },
-      { name: 'SQL', icon: <HiDatabase /> },
-      { name: 'HTML5', icon: <FaHtml5 /> },
-      { name: 'CSS3', icon: <FaCss3Alt /> },
-    ],
-  },
-  {
-    title: 'Frameworks & Libraries',
-    icon: <HiCog style={{ color: '#a855f7' }} />,
-    skills: [
-      { name: 'React', icon: <SiReact /> },
-      { name: 'Pandas', icon: <SiPandas /> },
-      { name: 'NumPy', icon: <SiNumpy /> },
+      { name: 'FastAPI', icon: <SiFastapi /> },
       { name: 'REST APIs', icon: <HiCode /> },
+      { name: 'GraphQL', icon: <SiGraphql /> },
+      { name: 'Async Programming', icon: <HiCog /> },
+      { name: 'Java', icon: <FaJava /> },
     ],
   },
   {
-    title: 'Data & Analytics',
-    icon: <HiChartBar style={{ color: '#ec4899' }} />,
+    title: 'Cloud & Databases',
+    icon: <HiCloud style={{ color: '#a855f7' }} />,
     skills: [
-      { name: 'Data Analytics', icon: <HiChartBar /> },
+      { name: 'AWS', icon: <FaAws /> },
+      { name: 'DynamoDB', icon: <FaDatabase /> },
+      { name: 'SQL Server', icon: <HiDatabase /> },
+      { name: 'Oracle', icon: <HiDatabase /> },
       { name: 'PostgreSQL', icon: <SiPostgresql /> },
-      { name: 'Data Pipelines', icon: <HiDatabase /> },
-      { name: 'Visualization', icon: <HiChartBar /> },
     ],
   },
   {
-    title: 'DevOps & Tools',
+    title: 'DevOps & Containers',
     icon: <HiTerminal style={{ color: '#22d3ee' }} />,
     skills: [
-      { name: 'Git', icon: <SiGit /> },
       { name: 'Docker', icon: <SiDocker /> },
+      { name: 'Kubernetes', icon: <SiKubernetes /> },
+      { name: 'CI/CD Pipelines', icon: <HiCog /> },
+      { name: 'Git', icon: <SiGit /> },
       { name: 'Linux', icon: <SiLinux /> },
       { name: 'Shell Scripting', icon: <SiGnubash /> },
+    ],
+  },
+  {
+    title: 'Testing & More',
+    icon: <HiBeaker style={{ color: '#ec4899' }} />,
+    skills: [
+      { name: 'Pytest', icon: <HiBeaker /> },
+      { name: 'React', icon: <SiReact /> },
+      { name: 'JavaScript', icon: <SiJavascript /> },
+      { name: 'System Design', icon: <HiCog /> },
       { name: 'Automation', icon: <HiCog /> },
     ],
   },

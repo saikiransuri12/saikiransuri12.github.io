@@ -573,6 +573,134 @@
   font-size: 1rem;
 }
 
+/* ===== EXPERIENCE SECTION ===== */
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #6366f1, #a855f7, rgba(168, 85, 247, 0.1));
+}
+
+.exp-card {
+  position: relative;
+  background: rgba(15, 15, 35, 0.6);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.exp-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.1);
+  transform: translateX(4px);
+}
+
+.exp-dot {
+  position: absolute;
+  left: -2.65rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #6366f1;
+  border: 3px solid #0a0a1a;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.exp-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.3rem;
+}
+
+.exp-company {
+  font-size: 0.95rem;
+  color: #a855f7;
+  font-weight: 500;
+}
+
+.exp-client {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.exp-header-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.exp-period {
+  display: block;
+  font-size: 0.85rem;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.exp-location {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.exp-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+.exp-highlights li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.exp-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+  font-size: 1rem;
+}
+
+.exp-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-tech span {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  color: #a855f7;
+  padding: 0.3rem 0.7rem;
+  background: rgba(168, 85, 247, 0.1);
+  border-radius: 4px;
+}
+
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
   display: grid;
@@ -801,6 +929,14 @@
 
   .mobile-menu-btn {
     display: block;
+  }
+
+  .exp-header {
+    flex-direction: column;
+  }
+
+  .exp-header-right {
+    text-align: left;
   }
 
   .projects-grid {

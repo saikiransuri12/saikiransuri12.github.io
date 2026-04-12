@@ -370,7 +370,7 @@ body {
 }
 
 .cell-value {
-  font-size: clamp(1.1rem, 4.5vw, 1.65rem);
+  font-size: clamp(1.4rem, 5.5vw, 2rem);
   font-weight: 700;
   line-height: 1;
 }
@@ -524,7 +524,7 @@ body {
 }
 
 .num-value {
-  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-size: clamp(1.4rem, 5vw, 1.9rem);
   font-weight: 700;
   line-height: 1;
 }
