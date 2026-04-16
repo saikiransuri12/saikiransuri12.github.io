@@ -25,7 +25,7 @@ const projects = [
     description:
       'An end-to-end data pipeline that ingests, transforms, and visualizes large datasets using Python, Pandas, and SQL for actionable business insights.',
     tech: ['Python', 'Pandas', 'SQL', 'Visualization'],
-    github: '#',
+    github: 'https://github.com/saikiransuri12/data_analytics_pipeline',
     live: null,
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     description:
       'A scalable RESTful API backend designed with clean architecture, featuring authentication, data validation, and comprehensive error handling.',
     tech: ['Python', 'REST', 'PostgreSQL', 'Docker'],
-    github: '#',
+    github: 'https://github.com/saikiransuri12/personal-finance-tracker-api',
     live: null,
   },
 ];
