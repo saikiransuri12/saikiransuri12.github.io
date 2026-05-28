@@ -7,7 +7,7 @@ const experiences = [
     company: 'Avvenire Solutions LLC',
     client: 'Comcast Corporation',
     location: 'Downingtown, PA',
-    period: 'Feb 2025 - Present',
+    period: 'Feb 2025 - Apr 2026',
     highlights: [
       'Designed and developed backend microservices using Python FastAPI to expose high-performance REST and GraphQL APIs.',
       'Architected scalable data access layers backed by AWS DynamoDB, reducing query latency by 45%.',
